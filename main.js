@@ -46,7 +46,7 @@ const negativeValues = function(numbers) {
 
 const questionings = function(greetings) {
   happyDays = greetings.map(function(greeting) {
-    return greeting.startsWith('h')
+    return greeting + '?'
   })
   return happyDays;
 }
@@ -64,6 +64,7 @@ const changeToInitials = function(initials) {
   })
   return signHereWith;
 }
+
 
 
 
