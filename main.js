@@ -60,10 +60,18 @@ const doubleEven = function(numbers) {
 
 const changeToInitials = function(initials) {
   signHereWith = initials.map(function(initial) {
-    return initial
+    return initial.startsWith
   })
   return signHereWith;
 }
+
+const titleCaseNames = function(names) {
+  crazyCase = names.map(function(name) {
+    return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase();
+  })
+  return crazyCase;
+} 
+
 
 
 
