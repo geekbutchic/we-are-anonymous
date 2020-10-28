@@ -2,6 +2,69 @@
  * YOUR CODE HERE *
  ******************/
 
+const onlyOdds = function(numbers) {
+  oddBalls = numbers.filter(function(number) {
+    return (number % 2 === 1)
+  }) 
+  return oddBalls;
+}
+
+const onlyEvens = function(numbers) {
+  evenSteven = numbers.filter(function(number) {
+    return (number % 2 === 0)
+  })
+  return evenSteven;
+}
+
+const shortNamesOnly = function(names) {
+  whoYouCallinShort = names.filter(function(names) {
+    return names.length < 7
+  })
+return whoYouCallinShort;
+}
+
+const sNames = function(names) {
+  theChosenOnes = names.filter(function(name) {
+    return name.startsWith('S')
+  })
+  return theChosenOnes
+}
+
+const tripleAll = function(numbers) {
+  timesThree = numbers.map(function(number) {
+    return (number * 3)
+  })
+  return timesThree;
+}
+
+const negativeValues = function(numbers) {
+  debbieDowner = numbers.map(function(number) {
+    return -Math.abs(number) || 0
+  })
+  return debbieDowner;
+}
+
+const questionings = function(greetings) {
+  happyDays = greetings.map(function(greeting) {
+    return greeting.startsWith('h')
+  })
+  return happyDays;
+}
+
+const doubleEven = function(numbers) {
+  doubleTrouble = numbers.map(function(number) {
+    return -Map.abs(number / 2 === 0)
+  })
+  return doubleTrouble;
+}
+
+const changeToInitials = function(initials) {
+  signHereWith = initials.map(function(initial) {
+    return initial
+  })
+  return signHereWith;
+}
+
 
 
 /*********************************
