@@ -64,12 +64,12 @@ const doubleEven = function (numbers) {
 
 const changeToInitials = function (initials) {
   signHereWith = initials.map(function (initial) {
-    return initial.charAt(0).toUpperCase() + initial[i]
+    return initial.charAt(0).toUpperCase() + initial.[initial.indexOf(' ') + 1]
   })
   return signHereWith
 }
 
-
+ 
 const titleCaseNames = function (names) {
   crazyCase = names.map(function (name) {
     return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase()
@@ -77,9 +77,12 @@ const titleCaseNames = function (names) {
   return crazyCase;
 }
 
-
-
-
+const doubleEveryOther = function (numbers) {
+  everyOther = numbers.map(function(number, element) {
+    return element % 2 === 1 ? number * 2 : number;
+  })
+  return everyOther;
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
